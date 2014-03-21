@@ -3,7 +3,7 @@
 class S3URI
   require 'aws-sdk'
 
-  attr_reader :file_name, :target_bucket
+  attr_reader :file_name, :target_bucket, :options
 
   def initialize(file_name, target_bucket, options={})
     @file_name = file_name
