@@ -23,6 +23,10 @@ class S3URI
     file_name.to_s
   end
 
+  def to_str
+    to_s
+  end
+
   private
 
   def s3_file
