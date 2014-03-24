@@ -63,5 +63,3 @@ class S3URI
   end
 
 end
-
-require_relative './version'

@@ -2,7 +2,7 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 's3_uri'
+require 'version'
 
 Gem::Specification.new do |spec|
   spec.name          = "s3_uri"
