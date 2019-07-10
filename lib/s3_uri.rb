@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class S3URI
-  require 'aws-sdk-v1'
+  require 'aws-sdk'
 
   attr_reader :file_name, :target_bucket, :options
 
@@ -38,7 +38,7 @@ class S3URI
   end
 
   def s3
-    AWS::S3.new(s3_options)
+    Aws::S3.new(s3_options)
   end
 
   def s3_options
