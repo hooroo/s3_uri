@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class S3URI
-  require 'aws-sdk'
+  require 'aws-sdk-s3'
 
   attr_reader :file_name, :target_bucket, :options
 
