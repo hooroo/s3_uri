@@ -3,13 +3,12 @@
 require_relative './spec_helper'
 
 describe S3URI do
-
   let(:s3uri) { S3URI.new(file_name, bucket_name) }
 
   let(:file_name) { 's3_file' }
   let(:bucket_name) {'s3_bucket'}
 
-  let(:s3_object) { double(AWS::S3) }
+  let(:s3_object) { double(Aws::S3) }
   let(:s3_buckets)  { double('s3_buckets') }
   let(:s3_bucket) { double('s3_bucket') }
   let(:s3_files) { double('s3_files') }
